@@ -1,10 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --font-dm-sans: "DM Sans", sans-serif;
+  --font-inter: "Inter", sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -13,9 +19,13 @@
     --foreground: #ededed;
   }
 }
+.inter {
+  font-family: var(--font-inter);
+}
 
 body {
   color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  /* font-size: 1rem; */
+  background: #e5e5e5;
+  font-family: var(--font-dm-sans), sans-serif;
 }
