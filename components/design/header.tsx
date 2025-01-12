@@ -14,15 +14,15 @@ function Header() {
 
   // Ferme le menu si on clique en dehors
   useEffect(() => {
-    const handleClickOutside = (event) => {
-      if (
-        isMenuOpen &&
-        menuRef.current &&
-        !menuRef.current.contains(event.target)
-      ) {
-        setIsMenuOpen(false);
-      }
-    };
+     const handleClickOutside = (event: MouseEvent) => {
+       if (
+         isMenuOpen &&
+         menuRef.current &&
+         !menuRef.current.contains(event.target as Node)
+       ) {
+         setIsMenuOpen(false);
+       }
+     };
 
     document.addEventListener("mousedown", handleClickOutside);
     return () => {
