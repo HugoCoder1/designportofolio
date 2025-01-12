@@ -23,9 +23,7 @@ export default function Projet({
             <p className="font-medium text-[16px] lg:text-[18px] leading-[121.5%] tracking-[-3%] text-main-black">
               {nombre} / PROJET NAME
             </p>
-            <p className="text-body text-main-black font-normal">
-              {titre}
-            </p>
+            <p className="text-body text-main-black font-normal">{titre}</p>
             <p className="text-[14px] lg:text-[16px] text-main-gray font-normal leading-[121.5%] tracking-[-3%]">
               {content}
             </p>
@@ -42,7 +40,10 @@ export default function Projet({
         </div>
 
         {/* Section image */}
-        <div className="w-full lg:w-[640px] h-[200px]  lg:h-[385px] bg-main-gray" />
+        <img
+          src="/Thumbnail.png"
+          className="w-full lg:w-[640px] h-[200px]  lg:h-[385px] bg-main-gray"
+        />
       </div>
 
       {/* Ligne séparatrice */}
