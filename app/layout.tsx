@@ -5,18 +5,18 @@ import Footer from "@/components/design/footer";
 import Header from "@/components/design/header";
 import Transition from "@/components/Transition";
 
-export const interSans = Inter({
+const interSans = Inter({
   variable: "--font-inter",
   subsets: ["latin"],
 });
-export const dmsans = DM_Sans({
+const dmsans = DM_Sans({
   variable: "--font-dm-sans",
   subsets: ["latin"],
 });
 
 export const metadata: Metadata = {
-  title: "Portofolio Website Sample",
-  description: "A portofolio website example",
+  title: "Portfolio Website Sample",
+  description: "A portfolio website example",
 };
 
 export default function RootLayout({
