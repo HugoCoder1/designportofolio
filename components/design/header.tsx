@@ -6,7 +6,7 @@ import React, { useState, useEffect, useRef } from "react";
 function Header() {
   const pathname = usePathname();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const menuRef = useRef(null); // Référence pour le menu
+  const menuRef = useRef<HTMLDivElement>(null);
 
   const toggleMenu = () => {
     setIsMenuOpen((prev) => !prev);
@@ -14,15 +14,15 @@ function Header() {
 
   // Ferme le menu si on clique en dehors
   useEffect(() => {
-     const handleClickOutside = (event: MouseEvent) => {
-       if (
-         isMenuOpen &&
-         menuRef.current &&
-         !menuRef.current.contains(event.target as Node)
-       ) {
-         setIsMenuOpen(false);
-       }
-     };
+    const handleClickOutside = (event: MouseEvent) => {
+      if (
+        isMenuOpen &&
+        menuRef.current &&
+        !menuRef.current.contains(event.target as Node)
+      ) {
+        setIsMenuOpen(false);
+      }
+    };
 
     document.addEventListener("mousedown", handleClickOutside);
     return () => {
