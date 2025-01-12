@@ -6,7 +6,7 @@ import Transition from "../Transition";
 export default function HeroSection() {
   return (
     <Transition>
-      <div className="mt-20 md:mt-40 h-auto px-4 sm:px-8">
+      <div className="mt-20 md:mt-40 h-auto px-4 sm:px-4">
         <div className="flex flex-col md:flex-row gap-x-[20px] gap-y-6 md:gap-x-[116px] md:gap-y-[70px]">
           <h1
             className={`text-[24px] sm:text-[30px] md:w-[370px] md:h-[129px] md:text-heading1 font-medium leading-[1.2] md:leading-[97.2%] tracking-[-3%]`}

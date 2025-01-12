@@ -6,13 +6,13 @@ export default function About() {
   return (
     <>
       {/* Container principal */}
-      <div className="flex flex-col sm:flex-row justify-between mt-28 px-4 sm:px-8">
+      <div className="flex flex-col md:max-h-[440px]  sm:flex-row justify-between mt-28 px-4 sm:px-4">
         {/* Section texte */}
-        <div className="flex flex-col mb-8 sm:mb-0 w-full sm:w-[515px]">
+        <div className="flex flex-col gap-y-8  mb-8 sm:mb-0 w-full sm:w-[515px]">
           <h1 className="text-[50px] sm:text-[40px] text-main-black font-medium leading-[97.2%] tracking-[-3%] mb-8 sm:mb-4">
             Hi, I'm Mehmet Akif Karasu, 3D artist & sculptor.
           </h1>
-          <div className="flex flex-col gap-y-8 text-[25px] sm:text-[20px] text-main-gray font-normal w-full">
+          <div className="flex flex-col gap-y-8 md:gap-y-32 text-[25px] sm:text-[20px] text-main-gray font-normal w-full">
             <p className="leading-[117%] tracking-[-3%]">
               My work is mainly focused on <br /> third-dimension modeling,
               texturing and rendering. I like exploring creatures with a touch
@@ -39,7 +39,7 @@ export default function About() {
       </div>
 
       {/* Logic pour les logiciels principaux */}
-      <div className="mt-36 max-h-[216px] my-auto text-main-black px-4 sm:px-8">
+      <div className="mt-36 max-h-[216px] my-auto text-main-black px-4">
         <div className="flex flex-col gap-y-6 w-full sm:w-[633px]">
           <div className="flex justify-between gap-x-3 md:gap-x-0">
             <p className="underline md:no-underline underline-offset-2 md:border-b h-fit border-black inter font-medium text-[18px] sm:text-[20px] leading-[121.5%] tracking-[-3%]">
@@ -70,7 +70,7 @@ export default function About() {
       </div>
 
       {/* Contact section */}
-      <div className="h-[166px] mt-20 max-w-[1120px] max-h-[2px] m-auto border-b-[3.5px] border-[#181717]" />
+      <div className="h-[166px] mt-20 max-w-[1120px] max-h-[2px] m-auto border-b-[3.5px] border-[#181717] mx-4" />
 
       <div className="pt-16 flex flex-col sm:flex-row gap-y-6 sm:gap-x-72 text-main-black px-4 sm:px-8">
         <p className="w-full sm:w-[347px] text-[22px] sm:text-[28px] font-normal leading-[117%] tracking-[-3%]">
@@ -78,7 +78,7 @@ export default function About() {
           <ArrowRight className="inline ml-4 sm:ml-6" />
         </p>
         <div className="flex flex-col gap-y-6 w-full sm:w-auto">
-          <p className="text-[20px] sm:text-[26px] font-normal leading-[117%] tracking-[-3%] max-w-[355px] mx-auto">
+          <p className="text-[20px] sm:text-[26px] font-normal leading-[117%] tracking-[-3%] md:max-w-[355px] md:mx-auto">
             makifkrarasu@outlook.com
           </p>
           <p className="text-body inter font-normal leading-[121.5%] tracking-[-3%]">

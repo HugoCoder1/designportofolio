@@ -31,7 +31,7 @@ export default function RootLayout({
           <div className="flex flex-col p-10 min-h-screen max-w-[1120px] mx-auto opacity-100">
             <Header />
             {children}
-            <div className="pt-40">
+            <div className="pt-4 md:pt-40">
               <Footer />
             </div>
           </div>
